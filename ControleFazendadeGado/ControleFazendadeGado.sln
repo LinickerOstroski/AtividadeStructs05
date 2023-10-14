@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleFazendadeGado", "ControleFazendadeGado\ControleFazendadeGado.csproj", "{23C19F54-0A20-4979-AF5F-7EB28E2483DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23C19F54-0A20-4979-AF5F-7EB28E2483DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23C19F54-0A20-4979-AF5F-7EB28E2483DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23C19F54-0A20-4979-AF5F-7EB28E2483DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23C19F54-0A20-4979-AF5F-7EB28E2483DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0B9AAC7-5D0E-4A3A-8F28-698691193DFB}
+	EndGlobalSection
+EndGlobal

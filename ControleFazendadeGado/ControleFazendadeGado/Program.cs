@@ -26,21 +26,37 @@ class Program
         Console.WriteLine("Ano de nascimento do animal:");
         novoGado.AnoNascimento = Convert.ToInt32(Console.ReadLine());
 
+        //Sistema do abate.
         int idade = novoGado.AnoNascimento - 2023;
         idade = -idade;
-        if(idade < 5 || novoGado.LitrosLeiteProduzido < 40)
+        if(idade > 5 || novoGado.LitrosLeiteProduzido < 40)
         {
             novoGado.Abate = 'S';
+            Console.WriteLine("Esse animal irá para o abate.");
         }
         else
         {
             novoGado.Abate = 'N';
+            Console.WriteLine("Esse animal não irá para o abate.");
         }
 
         lista.Add(novoGado);
         Console.WriteLine("Leitura realizada com sucesso!");
     }
 
+    static void TotalLeiteSemana(List<Gado> lista)
+    {
+        float total=0;
+        int qtd = lista.Count();
+
+        for(int i = 0; i < qtd; i++)
+        {
+            total += lista[i].LitrosLeiteProduzido; 
+        }
+
+        Console.WriteLine("O total de leite na semana na fazenda:" + total);
+
+    }
     static void Main()
     {
         List<Gado> lista = new List<Gado>();

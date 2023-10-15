@@ -1,0 +1,14 @@
+C:\Users\Iksortso K2\Desktop\ListaDeExercícios3\Atividade05\ControleFazendadeGado\ControleFazendadeGado\bin\Debug\net6.0\ControleFazendadeGado.exe
+C:\Users\Iksortso K2\Desktop\ListaDeExercícios3\Atividade05\ControleFazendadeGado\ControleFazendadeGado\bin\Debug\net6.0\ControleFazendadeGado.deps.json
+C:\Users\Iksortso K2\Desktop\ListaDeExercícios3\Atividade05\ControleFazendadeGado\ControleFazendadeGado\bin\Debug\net6.0\ControleFazendadeGado.runtimeconfig.json
+C:\Users\Iksortso K2\Desktop\ListaDeExercícios3\Atividade05\ControleFazendadeGado\ControleFazendadeGado\bin\Debug\net6.0\ControleFazendadeGado.dll
+C:\Users\Iksortso K2\Desktop\ListaDeExercícios3\Atividade05\ControleFazendadeGado\ControleFazendadeGado\bin\Debug\net6.0\ControleFazendadeGado.pdb
+C:\Users\Iksortso K2\Desktop\ListaDeExercícios3\Atividade05\ControleFazendadeGado\ControleFazendadeGado\obj\Debug\net6.0\ControleFazendadeGado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Iksortso K2\Desktop\ListaDeExercícios3\Atividade05\ControleFazendadeGado\ControleFazendadeGado\obj\Debug\net6.0\ControleFazendadeGado.AssemblyInfoInputs.cache
+C:\Users\Iksortso K2\Desktop\ListaDeExercícios3\Atividade05\ControleFazendadeGado\ControleFazendadeGado\obj\Debug\net6.0\ControleFazendadeGado.AssemblyInfo.cs
+C:\Users\Iksortso K2\Desktop\ListaDeExercícios3\Atividade05\ControleFazendadeGado\ControleFazendadeGado\obj\Debug\net6.0\ControleFazendadeGado.csproj.CoreCompileInputs.cache
+C:\Users\Iksortso K2\Desktop\ListaDeExercícios3\Atividade05\ControleFazendadeGado\ControleFazendadeGado\obj\Debug\net6.0\ControleFazendadeGado.dll
+C:\Users\Iksortso K2\Desktop\ListaDeExercícios3\Atividade05\ControleFazendadeGado\ControleFazendadeGado\obj\Debug\net6.0\refint\ControleFazendadeGado.dll
+C:\Users\Iksortso K2\Desktop\ListaDeExercícios3\Atividade05\ControleFazendadeGado\ControleFazendadeGado\obj\Debug\net6.0\ControleFazendadeGado.pdb
+C:\Users\Iksortso K2\Desktop\ListaDeExercícios3\Atividade05\ControleFazendadeGado\ControleFazendadeGado\obj\Debug\net6.0\ControleFazendadeGado.genruntimeconfig.cache
+C:\Users\Iksortso K2\Desktop\ListaDeExercícios3\Atividade05\ControleFazendadeGado\ControleFazendadeGado\obj\Debug\net6.0\ref\ControleFazendadeGado.dll

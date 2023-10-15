@@ -19,13 +19,13 @@ class Program
         Console.WriteLine("Digite o código do animal:");
         novoGado.Codigo = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Litros de leite produzido:");
+        Console.WriteLine("Litros de leite produzido (por semana):");
         novoGado.LitrosLeiteProduzido = float.Parse(Console.ReadLine());
 
-        Console.WriteLine("Quilos de Alim ingerido:");
+        Console.WriteLine("Quilos de Alim ingerido (por semana):");
         novoGado.AlimQuilos = float.Parse(Console.ReadLine());
 
-        Console.WriteLine("Mes de nascimento do animal:");
+        Console.WriteLine("Mes de nascimento do animal (1-12):");
         novoGado.MesNascimento = Convert.ToInt32(Console.ReadLine());
 
         Console.WriteLine("Ano de nascimento do animal:");
@@ -37,12 +37,12 @@ class Program
         if(idade > 5 || novoGado.LitrosLeiteProduzido < 40)
         {
             novoGado.Abate = 'S';
-            Console.WriteLine("Esse animal irá para o abate.");
+            Console.WriteLine("\nEsse animal irá para o abate.");
         }
         else
         {
             novoGado.Abate = 'N';
-            Console.WriteLine("Esse animal não irá para o abate.");
+            Console.WriteLine("\nEsse animal não irá para o abate.");
         }
 
         lista.Add(novoGado);
@@ -59,7 +59,7 @@ class Program
             total += lista[i].LitrosLeiteProduzido; 
         }
 
-        Console.WriteLine("O total de leite na semana na fazenda:" + total);
+        Console.WriteLine($"O total de leite produzido na semana: {total} Litros.");
     }
 
     static void AlimentoConsumidoSemana(List<Gado> lista)
@@ -71,7 +71,7 @@ class Program
             total += g.AlimQuilos;
         }
 
-        Console.WriteLine("Quantidade total de alimento consumido por semana:" + total);
+        Console.WriteLine($"A quantidade total de alimentos consumido por semana: {total} Quilos.");
     }
 
     static void ListarAnimaisAbate(List<Gado> lista)
@@ -111,25 +111,28 @@ class Program
             switch (operador)
             {
                 case 0:
+                    lerDados(lista);
                     break;
                 case 1:
+                    TotalLeiteSemana(lista);
                     break;
                 case 2:
+                    AlimentoConsumidoSemana(lista);
                     break;
                 case 3:
+                    ListarAnimaisAbate(lista);
                     break;
                 case 4:
+                    programa = false;
+                    Console.WriteLine("Precione ENTER para sair");
                     break;
                 case 5:
                     break;
 
             }
+            Console.ReadKey();
+            Console.Clear();
+
         } while (programa);
-
-        Console.ReadKey();
-        Console.Clear();
-
     }
-
-
 }

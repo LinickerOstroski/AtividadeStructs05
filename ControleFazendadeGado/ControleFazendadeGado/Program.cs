@@ -15,14 +15,19 @@ class Program
     static void lerDados(List<Gado> lista)
     {
         Gado novoGado = new Gado();
+
         Console.WriteLine("Digite o código do animal:");
         novoGado.Codigo = Convert.ToInt32(Console.ReadLine());
+
         Console.WriteLine("Litros de leite produzido:");
         novoGado.LitrosLeiteProduzido = float.Parse(Console.ReadLine());
+
         Console.WriteLine("Quilos de Alim ingerido:");
         novoGado.AlimQuilos = float.Parse(Console.ReadLine());
+
         Console.WriteLine("Mes de nascimento do animal:");
         novoGado.MesNascimento = Convert.ToInt32(Console.ReadLine());
+
         Console.WriteLine("Ano de nascimento do animal:");
         novoGado.AnoNascimento = Convert.ToInt32(Console.ReadLine());
 
@@ -80,9 +85,49 @@ class Program
             }
         }
     }
+
+    static int menu()
+    {
+        Console.WriteLine("\t*** Controle de gados da fazenda ***");
+
+        Console.WriteLine("0-Cadastrar novo animal");
+        Console.WriteLine("1-Retornar a quantidade total de leite produzida por semana");
+        Console.WriteLine("2-Retornar a quantidade total de alimento consumido por semana");
+        Console.WriteLine("3-Listar animais que devem ir para o abate");
+        Console.WriteLine("4-Sair do programa");
+
+        int op = int.Parse(Console.ReadLine());
+
+        return op;
+    }
     static void Main()
     {
         List<Gado> lista = new List<Gado>();
+        bool programa = true;
+
+        do
+        {
+            int operador = menu();
+            switch (operador)
+            {
+                case 0:
+                    break;
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+
+            }
+        } while (programa);
+
+        Console.ReadKey();
+        Console.Clear();
 
     }
 

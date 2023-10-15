@@ -68,7 +68,18 @@ class Program
 
         Console.WriteLine("Quantidade total de alimento consumido por semana:" + total);
     }
-   
+
+    static void ListarAnimaisAbate(List<Gado> lista)
+    {
+        Console.WriteLine("Animais que irão para o abate");
+        foreach (Gado g in lista)
+        {
+            if (g.Abate == 'S')
+            {
+                Console.WriteLine($"Código do animal: {g.Codigo}");
+            }
+        }
+    }
     static void Main()
     {
         List<Gado> lista = new List<Gado>();

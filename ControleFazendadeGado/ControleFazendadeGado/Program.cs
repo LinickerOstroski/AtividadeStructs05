@@ -100,10 +100,53 @@ class Program
 
         return op;
     }
+
+    static void salvarDados(List<Gado> lista, string nomeArquivo)
+    {
+
+        using (StreamWriter writer = new StreamWriter(nomeArquivo))
+        {
+            foreach (Gado g in lista)
+            {
+                writer.WriteLine($"{g.Codigo},{g.LitrosLeiteProduzido},{g.AlimQuilos},{g.Abate},{g.MesNascimento},{g.AnoNascimento}");
+            }
+        }
+        Console.WriteLine("Dados salvos com sucesso!");
+    }
+    static void carregarDados(List<Gado> lista, string nomeArquivo)
+    {
+        if (File.Exists(nomeArquivo))
+        {
+            string[] linhas = File.ReadAllLines(nomeArquivo);
+            foreach (string linha in linhas)
+            {
+                string[] campos = linha.Split(',');
+                Gado sgado = new Gado();
+                {
+                    sgado.Codigo = int.Parse(campos[0]);
+                    sgado.LitrosLeiteProduzido = float.Parse(campos[1]);
+                    sgado.AlimQuilos = float.Parse(campos[2]);
+                    sgado.Abate = char.Parse(campos[3]);
+                    sgado.MesNascimento = int.Parse(campos[4]);
+                    sgado.AnoNascimento = int.Parse(campos[5]);
+
+                };
+
+                lista.Add(sgado);
+            }
+            Console.WriteLine("Dados carregados com sucesso!");
+
+        }
+        else
+        {
+            Console.WriteLine("*** Dados não encotrados ***");
+        }
+    }
     static void Main()
     {
         List<Gado> lista = new List<Gado>();
         bool programa = true;
+        carregarDados(lista, "dados.txt");
 
         do
         {
@@ -123,6 +166,7 @@ class Program
                     ListarAnimaisAbate(lista);
                     break;
                 case 4:
+                    salvarDados(lista, "dados.txt");
                     programa = false;
                     Console.WriteLine("Precione ENTER para sair");
                     break;

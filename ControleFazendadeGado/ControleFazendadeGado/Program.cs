@@ -55,8 +55,20 @@ class Program
         }
 
         Console.WriteLine("O total de leite na semana na fazenda:" + total);
-
     }
+
+    static void AlimentoConsumidoSemana(List<Gado> lista)
+    {
+        float total = 0;
+
+        foreach (Gado g in lista)
+        {
+            total += g.AlimQuilos;
+        }
+
+        Console.WriteLine("Quantidade total de alimento consumido por semana:" + total);
+    }
+   
     static void Main()
     {
         List<Gado> lista = new List<Gado>();
